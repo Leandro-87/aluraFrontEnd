@@ -78,3 +78,7 @@ btSkin.forEach((el) => {
         }
     })
 })
+
+function msg(){
+    alert('Apenas um teste ;)')
+}
