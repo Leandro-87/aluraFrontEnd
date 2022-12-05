@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(../img/fundo.jpg);
+    background: url(../img/bg-wz.jpg);
     background-position: center center;
     background-size: cover cover;
     padding: 0;
@@ -19,6 +19,19 @@ body {
 
 body, input {
     font-family: 'Teko', sans-serif;
+}
+.btLe {border: 0;
+    margin: 0 1em 1em 0;
+    padding: 1em;
+    background: cadetblue;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btLe:hover{
+    transform: scale(1.1);
 }
 
 main {
@@ -30,7 +43,6 @@ main {
 }
 
 .robotron {
-    background: url(../img/estrutura.png) no-repeat;
     background-position: center center;
     margin: 0;
     flex-basis: 40%;
@@ -38,9 +50,8 @@ main {
 }
 
 .robo {
-    height: 110%;
+    height: 90%;
     z-index: 1;
-    position: absolute;
     left: -20%;
     top: -5%;
 }
@@ -51,7 +62,7 @@ main {
     font-size: 130px;
     position: absolute;
     bottom: 7rem;
-    left: -3rem;
+    left: 3rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -154,6 +165,7 @@ main {
 .estatisticas {
     flex-basis: 23%;
     padding: 2em 2em 0;
+    height: 100%;
 }
 
 .estatistica {
