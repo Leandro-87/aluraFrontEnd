@@ -244,10 +244,12 @@ main {
     }
 }
 @media screen and (max-width: 800px) {
+    body{background-size: cover;}
     main {height: 100vh;margin: 3vh auto; flex-wrap: wrap;}
-    .robotron {flex-basis: 48%; height: 60vh;}
+    .robotron {flex-basis: 48%; height: 40vh;}
     .robo{height: auto;width: 100%;}
-    .estatisticas{flex-basis: 48%; height: 60vh;}
+    .estatisticas{flex-basis: 48%; height: 40vh;}
     .equipamentos {flex-basis: 100%; margin-top: 2em;}
     .titulo {font-size: 70px; bottom: 5rem; left: 1rem;}
+    .btLe{margin: 0 0 10px 0;}
 }
