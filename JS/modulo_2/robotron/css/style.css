@@ -250,6 +250,6 @@ main {
     .robo{height: auto;width: 100%;}
     .estatisticas{flex-basis: 48%; height: 40vh;}
     .equipamentos {flex-basis: 100%; margin-top: 2em;}
-    .titulo {font-size: 70px; bottom: 5rem; left: 1rem;}
+    .titulo {font-size: 50px; bottom: 0rem; left: 1rem;}
     .btLe{margin: 0 0 10px 0;}
 }
