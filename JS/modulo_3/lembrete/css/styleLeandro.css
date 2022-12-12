@@ -2,11 +2,12 @@ html {background: radial-gradient(farthest-corner at right top,#f1f1f1, #e9e9e9)
 .conteudo {display: flex; flex-direction: column; padding: 2em;}
 #novoItem {display: flex; flex-direction: column;}
 #novoItem input[type="text"], #novoItem input[type="number"] {padding: 0.25em 0; font-size: 2em; border: none; border-bottom: 2px solid #d9d9d9; background: rgba(255,255,255,0);  color: #5a5a5a;}
-#novoItem input[type="text"] { margin-bottom: 1em;}
+#novoItem input[type="text"] { margin-bottom: 0.5em;}
 #novoItem input[type="submit"] {padding: 1.25em; font-size: 1.5em; text-transform: uppercase; font-weight: bold; color: #0c8f89; background: transparent; border: none;}
 label{text-transform: uppercase; font-weight: bold; font-size: .85em; color: #404040;}
 ul.lista {padding: 0;} 
-ul.lista .item {display: flex; align-items: center; font-size: 1.25em; text-transform: uppercase; font-weight: bold; padding: 1em 0; border-bottom: 2px solid #e5e5e5; color: #404040; gap: 1em;}
-ul.lista .item strong{display: flex; width: 40px; height: 40px;border-radius: 120px; justify-content: center; align-items: center; background-color: #0c8f89; color: #FFF;}
+ul.lista .item {display: flex; align-items: center; font-size: 1em; text-transform: uppercase; font-weight: bold; padding: .75em 0; border-bottom: 2px solid #e5e5e5; color: #404040; gap: 1em;}
+ul.lista .item strong{display: flex; width: 47px; height: 40px;border-radius: 120px; justify-content: center; align-items: center; background-color: #0c8f89; color: #FFF;}
 ul.lista .item span{width: 80%;}
 ul.lista .item button{width: 10%; border: none; font-size: 2rem; font-weight: bold; color: #838383;}
+textarea:focus-visible, input:focus-visible { box-shadow: 0 !important ; outline: 0 !important;}
