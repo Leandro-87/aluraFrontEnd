@@ -6,7 +6,6 @@ minhaLista.forEach((elemento) => {
     criaLembrete(elemento)
 });
 
-
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -26,10 +25,12 @@ form.addEventListener("submit", (e) => {
         
         minhaLista[existe.id] = item
 
-    } else {
+    } else if (item.nome.length < 40){
         item.id = minhaLista[minhaLista.length -1] ? (minhaLista[minhaLista.length -1]).id + 1 : 0
         criaLembrete(item)
         minhaLista.push(item)
+    } else if (item.nome.length > 5){
+        alert('seu item deve conter no máximo 40 caracteres')
     }
 
     localStorage.setItem('itens', JSON.stringify(minhaLista))
@@ -42,21 +43,17 @@ function criaLembrete(item){
     const novoItem = document.createElement('li')
     const qntItem = document.createElement('strong')
 
-    if(item.nome === "" && item.quantidade) {
-        alert('O item precisa ter um nome')
-    }
-    else if(item.nome != ""){
-        novoItem.classList.add('item')
-        qntItem.innerHTML = item.quantidade
-        qntItem.dataset.id = item.id
-        
-        novoItem.appendChild(qntItem) 
-        novoItem.innerHTML += `<span>${item.nome}</span>`
-        
-        lista.appendChild(novoItem)
-        
-        novoItem.appendChild(botaoDeleta(item.id))
-    }
+    novoItem.classList.add('item')
+    qntItem.innerHTML = item.quantidade
+    qntItem.dataset.id = item.id
+    
+    novoItem.appendChild(qntItem) 
+    novoItem.innerHTML += `<span>${item.nome}</span>`
+    
+    lista.appendChild(novoItem)
+    
+    novoItem.appendChild(botaoDeleta(item.id))
+    
   
 }
 
