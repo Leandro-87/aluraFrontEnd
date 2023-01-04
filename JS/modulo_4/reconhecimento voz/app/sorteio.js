@@ -7,6 +7,8 @@ function geraNumero(){
     return parseInt(Math.random() * maiorValor + 1 )
 }
 
+console.log('O número secreto é:', numeroSecreto)
+
 const elementoMenorValor = document.getElementById('menor-valor')
 elementoMenorValor.innerHTML = menorValor
 
