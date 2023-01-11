@@ -1,4 +1,3 @@
-
 async function buscaEndereco(cep){
     const cepErro = document.querySelector('#erro')
     cepErro.innerHTML = '' // Para apagar o mensagem de erro depois que invalida e valida
@@ -20,6 +19,12 @@ async function buscaEndereco(cep){
         estado.value = consultaCepLeitura.uf
 
         console.log(consultaCepLeitura)
+
+        logradouro.disabled = true
+        cidade.disabled = true
+        bairro.disabled = true
+        estado.disabled = true
+       
         return consultaCepLeitura
     }
     catch(erro){
